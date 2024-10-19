@@ -38,7 +38,3 @@ A simple and user-friendly weather application that fetches real-time weather da
 5. Start the development server:
    ```bash
    npm start
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
