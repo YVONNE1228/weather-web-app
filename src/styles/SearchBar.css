@@ -1,0 +1,54 @@
+/* Styling for the overall search bar container */
+.search-bar {
+  display: flex;
+  margin: 25px 0px 85px 0px;
+}
+
+/* Override styles for TextField */
+.search-bar .MuiInputBase-root {
+  background-color: #764ac3; /* Background for input fields */
+  border-radius: 25px;
+  color: white;
+}
+
+.search-bar .MuiInputLabel-root {
+  color: #d8c6f7; /* Label color */
+}
+
+.search-bar .MuiInputBase-input {
+  color: white;
+  /* padding: 10px 20px; */
+}
+
+.search-bar .MuiInputBase-root:hover:not(.Mui-disabled):before {
+  border-bottom: none; /* Remove underline hover */
+}
+
+.search-bar .Mui-focused:before {
+  border-bottom: none; /* Remove underline on focus */
+}
+
+/* Override for the Button */
+.search-bar .MuiButton-root {
+  background-color: #6c40b6;
+  border-radius: 50%;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar .MuiButton-root:hover {
+  background-color: #5a33a3;
+  transform: scale(1.05);
+}
+
+.error {
+  color: crimson;
+  font-size: larger;
+}

@@ -1,0 +1,146 @@
+body {
+  /* The image used */
+  background-image: url(../assets/bg-dark.png);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.weather-card {
+  background-color: rgba(30, 0, 77, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.weather-info {
+  position: relative;
+  z-index: 1;
+}
+
+div.weather-info p {
+  font-size: 16px;
+  font-family: cursive;
+}
+
+.temperature {
+  font-size: 60px;
+  margin: 0;
+}
+
+.range,
+.location,
+.date-time,
+.condition,
+.description {
+  margin: 5px 0;
+}
+
+div.second-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+div.second-line p {
+  flex: 1; /* Equal width */
+  margin: 10px;
+  /* background-color: lightblue; */
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+div.second-line p.range {
+  text-align: left;
+  margin-top: 20px;
+}
+
+div.second-line p.location {
+  text-align: right;
+  font-size: 25px;
+}
+
+div.line {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.line p {
+  flex: 1 1 30%; /* Base width for items in container 2 */
+  margin: 5px;
+  /* background-color: lightcoral; */
+}
+
+div.line p.description {
+  /* display: flex;
+  justify-content: left; */
+}
+
+div.line p.date-time {
+  /* display: flex;
+  justify-content: center; */
+}
+
+div.line p.condition {
+  /* display: flex;
+  justify-content: right; */
+}
+
+.weather-icon {
+  position: fixed;
+  top: 90px;
+  right: 0;
+  width: 205px;
+  height: 200px;
+}
+
+.search-history {
+  margin-top: 20px;
+  background-color: rgba(30, 0, 77, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.search-history h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.search-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-history li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  /* border-bottom: 1px solid rgba(39, 0, 102, 0.2); */
+}
+
+.search-history li:last-child {
+  border-bottom: none;
+}
+
+.time {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.item {
+  margin-top: 20px;
+  background-color: rgba(29, 0, 87, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
